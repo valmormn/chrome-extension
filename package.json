@@ -1,0 +1,21 @@
+{
+  "name": "chrome-extension",
+  "version": "1.0.0",
+  "description": "as",
+  "main": "background.js",
+  "scripts": {
+    "push": "git add . && git commit -am \"chrome-extension\" && git push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valmormn/chrome-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valmormn/chrome-extension/issues"
+  },
+  "homepage": "https://github.com/valmormn/chrome-extension#readme"
+}
