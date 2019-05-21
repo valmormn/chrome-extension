@@ -1,15 +1,9 @@
 {
-    "name": "Chrome Extension - Valmor",
     "version": "1.0",
+    "manifest_version": 2,
+    "name": "Chrome Extension - Valmor",
     "description": "Minha Extensão!",
     "permissions": ["activeTab", "declarativeContent", "storage"],
-    "background": {
-        "scripts": [
-            "./background.js",
-            "./js/defaults.js"
-        ],
-        "persistent": false
-    },
     "page_action": {
         "default_popup": "popup.html",
         "default_icon": {
@@ -19,11 +13,25 @@
             "128": "images/rocket128.png"
         }
     },
+    "background": {
+        "scripts": [
+            "./background.js",
+            "./js/defaults.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["content.js"]
+        }
+      ],
     "icons": {
         "16": "images/rocket16.png",
         "32": "images/rocket32.png",
         "48": "images/rocket48.png",
         "128": "images/rocket128.png"
       },
-    "manifest_version": 2
 }

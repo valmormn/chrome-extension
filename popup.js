@@ -15,7 +15,9 @@ changeColor.onclick = function (element) {
     }, function (tabs) {
         chrome.tabs.executeScript(
             tabs[0].id, {
-                code: 'document.body.style.backgroundColor = "' + color + '";'
+                code: 'document.body.style.backgroundColor = "' + color + '";',
+                // code: 'window.alert("' + color + '");',
+                code: 'window.alert("que porra doida!");'
             });
     });
 };
