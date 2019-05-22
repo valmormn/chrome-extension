@@ -3,7 +3,7 @@
     "manifest_version": 2,
     "name": "Chrome Extension - Valmor",
     "description": "Minha Extensão!",
-    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "permissions": ["activeTab", "tabs", "declarativeContent", "storage"],
     "page_action": {
         "default_popup": "popup.html",
         "default_icon": {

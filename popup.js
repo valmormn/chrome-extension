@@ -1,4 +1,4 @@
-// 
+// popup.js
 
 let changeColor = document.getElementById('changeColor');
 
@@ -15,9 +15,16 @@ changeColor.onclick = function (element) {
     }, function (tabs) {
         chrome.tabs.executeScript(
             tabs[0].id, {
-                code: 'document.body.style.backgroundColor = "' + color + '";',
+                // code: 'document.body.style.backgroundColor = "' + color + '";',
+                code: 'document.body.style.backgroundColor = "#1b1b1b";',
                 // code: 'window.alert("' + color + '");',
-                code: 'window.alert("que porra doida!");'
+                // code: 'ff()'
             });
     });
 };
+
+let ff = () => {
+    document.body.style.backgroundColor = "#1b1b1b";
+
+    return
+}
