@@ -38,6 +38,9 @@
       "description": "Opens popup.html"
     }
   },
+  "chrome_url_overrides" : {
+    "newtab": "./src/override/override.html"
+  },
   "icons": {
     "16": "./src/assets/images/rocket16.png",
     "32": "./src/assets/images/rocket32.png",
