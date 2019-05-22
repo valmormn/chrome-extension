@@ -3,8 +3,17 @@
   "manifest_version": 2,
   "name": "Chrome Extension - Valmor",
   "description": "Minha Extensão!",
+  "icons": {
+    "16": "./src/assets/images/rocket16.png",
+    "32": "./src/assets/images/rocket32.png",
+    "48": "./src/assets/images/rocket48.png",
+    "128": "./src/assets/images/rocket128.png"
+  },
   "permissions": ["activeTab", "tabs", "contextMenus", "declarativeContent", "storage"],
   "omnibox": { "keyword" : "v" },
+  "chrome_url_overrides" : {
+    "newtab": "./src/override/override.html"
+  },
   "options_page": "./src/options/options.html",
   "browser_action": {
     "default_title": "Awesome Browser",
@@ -37,14 +46,5 @@
       },
       "description": "Opens popup.html"
     }
-  },
-  "chrome_url_overrides" : {
-    "newtab": "./src/override/override.html"
-  },
-  "icons": {
-    "16": "./src/assets/images/rocket16.png",
-    "32": "./src/assets/images/rocket32.png",
-    "48": "./src/assets/images/rocket48.png",
-    "128": "./src/assets/images/rocket128.png"
   }
 }
