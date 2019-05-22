@@ -13,4 +13,6 @@ body {
     padding: 12px;
     margin: 24px;
     background-color: #252525;
+    border-width: 2px;
+    border-color: aqua;
 }

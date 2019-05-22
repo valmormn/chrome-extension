@@ -28,3 +28,11 @@ let ff = () => {
 
     return
 }
+
+chrome.browserAction.onClicked.addListener(function(tab) {
+    alert('HELLOOOOO WORLD!!');
+  });
+
+document.getElementById("fav").addEventListener("click", ()=>{
+    alert('ta maneiro');
+})

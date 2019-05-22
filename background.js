@@ -5,6 +5,7 @@
 'use strict';
 
 chrome.runtime.onInstalled.addListener(function() {
+
   chrome.storage.sync.set({color: 'red'}, function() {
     console.log("Foi escrito em chrome storage e em seguida rodou uma callback ond");
   });
@@ -25,15 +26,22 @@ chrome.runtime.onInstalled.addListener(function() {
   };
 
   // chrome.runtime.onInstalled.addListener(function() {
-  //   for (let key of Object.keys(kLocales)) {
-  //     chrome.contextMenus.create({
-  //       id: key,
-  //       title: kLocales[key],
-  //       type: 'normal',
-  //       contexts: ['selection'],
-  //     });
-  //   }
+    // for (let key of Object.keys(kLocales)) {
+    //   chrome.contextMenus.create({
+    //     id: key,
+    //     title: kLocales[key],
+    //     type: 'normal',
+    //     contexts: ['selection'],
+    //   });
+    // }
   // });
+
+  chrome.contextMenus.create({
+    id: 'id de que',
+    title: 'Awesome Browser',
+    type: 'normal',
+    contexts: ['all'],
+  });
 
   // chrome.pageAction.onClicked.addListener(function (){
   //   alert("iaiii");
@@ -54,6 +62,10 @@ chrome.runtime.onInstalled.addListener(function() {
   // });
 });
 
-chrome.browserAction.onClicked.addListener(function (tab){
-  alert("iaiii");
-})
+// chrome.browserAction.onClicked.addListener(function (tab){
+//   alert("iaiii");
+// })
+
+chrome.browserAction.onClicked.addListener(function(tab) {
+  alert('HELLOOOOO WORLD!!');
+});
