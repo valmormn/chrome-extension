@@ -1,4 +1,6 @@
 // content.js
+// this one works everytime the browser loads a page
+
 
 // alert("Hello from your Chrome extension!");
 
@@ -6,7 +8,7 @@
 
 console.log('esse veio da extensao');
 
-// document.body.style.backgroundColor = "red";
+// document.body.style.backgroundColor = "#454545";
 
 
 // 
