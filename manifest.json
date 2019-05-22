@@ -3,8 +3,9 @@
   "manifest_version": 2,
   "name": "Chrome Extension - Valmor",
   "description": "Minha Extensão!",
-  "permissions": ["activeTab", "tabs", "declarativeContent", "storage"],
+  "permissions": ["activeTab", "tabs", "contextMenus", "declarativeContent", "storage"],
   "omnibox": { "keyword" : "v" },
+  "options_page": "./src/options/options.html",
   "browser_action": {
     "default_title": "Awesome Browser",
     "default_popup": "./src/popup/popup.html",

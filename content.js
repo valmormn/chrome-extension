@@ -1,5 +1,5 @@
 // content.js
-// this one works everytime the browser loads a page
+// this one works every time the browser loads a page
 
 
 // alert("Hello from your Chrome extension!");
@@ -8,7 +8,17 @@
 
 console.log('esse veio da extensao');
 
-// document.body.style.backgroundColor = "#454545";
+// document.body.style.backgroundColor = "#252525";
+// document.body.style.color = "#e8e8e8";
 
 
 // 
+
+// chrome.pageAction.onClicked.addListener(function (){
+//     alert("iaiii");
+// })
+
+// chrome.browserAction.onClicked.addListener(function (){
+//     alert("iaiii");
+// })
+
