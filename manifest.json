@@ -44,7 +44,7 @@
         "default": "Ctrl+Shift+V",
         "mac": "MacCtrl+Shift+V"
       },
-      "description": "Opens popup.html"
+      "description": "Opens default_popup = popup.html"
     }
   }
 }
