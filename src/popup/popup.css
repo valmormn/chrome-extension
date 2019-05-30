@@ -3,12 +3,14 @@
 html {
     /* width: 400px; */
     background-color: #1b1b1b;
+    /* background-color: red; */
 }
 
 body {
     width: 300px;
+    /* padding: 1px 2px; */
     padding: 12px;
-    margin: 12px;
+    margin: 1px 3px 3px 1px;
     color: #efefef !important;
     background-color: #252525;
 
@@ -16,10 +18,21 @@ body {
     /* border-color: aqua; */
 }
 
-/* button {
-    height: 60px;
-    width: 30px;
-    outline: none;
-    margin: 10px;
-    padding: 12px;
-} */
+button {
+    /* height: 60px; */
+    /* width: 30px; */
+    /* outline: none; */
+    /* margin: 10px; */
+    /* padding: 12px; */
+    background-color: transparent !important;
+}
+
+.btn-transparent {
+    background-color: transparent !important;
+}
+
+#topbar {
+    background-color: #1b1b1b;
+    /* padding: 2px; */
+    margin: 16px 0px;
+}
