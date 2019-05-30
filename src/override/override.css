@@ -7,4 +7,19 @@ html {
 body {
     color: #e8e8e8;
     background-color: #252525;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
 }
+
+#input {
+    /* width: 600px; */
+    /* max-width: 900px !important; */
+    /* display: flex; */
+    /* flex-flow: row nowrap; */
+    /* text-align: center; */
+}
+
+
+
+/* . */
