@@ -13,13 +13,31 @@ body {
 }
 
 #input {
-    /* width: 600px; */
+    width: 600px;
     /* max-width: 900px !important; */
     /* display: flex; */
     /* flex-flow: row nowrap; */
     /* text-align: center; */
 }
 
+#topbar {
+    background-color: #1b1b1b;
+    /* padding: 2px; */
+    margin: 0px 0px;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+}
 
+#main {
+    margin: 80px 24px;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.card {
+    /* color: #1b1b1b !important; */
+    color: #252525 !important;
+}
 
 /* . */
