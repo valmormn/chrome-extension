@@ -1,6 +1,6 @@
 # chrome-extension
 
-as
+Chrome Extention
 
 ```Json
 {
