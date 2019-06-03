@@ -1,18 +1,22 @@
-// leftClik
+// leftClick.js
 
-// mouse.js
-/* jshint esversion: 8 */
-
-// import { leftClick } from "./leftClick.js";
-// import { getLeftMouseClick } from "./leftClick.js";
-
-
+export function getLeftMouseClick() {
+    document.addEventListener("click", function (e) {
+        console.log(e);
+        // let el = {
+        //   info: "Mouse click",
+        //   e: e, // evento
+        //   el: e.target, // elemento clicado
+        //   tagName: e.target.tagName // tagName do elemento clicado
+        // };
+        
+      },
+      false
+    );
+  }
+  
 export let leftClick = {
     id: "leftClick",
-    alias:'',
-    route: "src/sys/sensi/pointer/mouse/leftClik",
-    // getLeftMouseClick: getLeftMouseClick()
-    // leftClick: leftClick
+    path: "./src/sys/sensi/pointer/mouse/leftClik/leftClik.js",
+    getLeftMouseClick: getLeftMouseClick()
 };
-
-// export let leftClik = { id: "leftClik"}

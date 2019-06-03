@@ -9,11 +9,11 @@ console.log('sys.js'); // roda primeiro
 function afterLoad() {
     // console.log("hey");
 
-    // Object.defineProperty(window, 'sys', {
-    //     value: sys,
-    //     writable: false,
-    //     enumerable: true
-    // });
+    Object.defineProperty(window, 'sys', {
+        value: 'sysd',
+        writable: false,
+        enumerable: true
+    });
 
     document.addEventListener('DOMContentLoaded', function () {
         console.log('render'); // roda depois
