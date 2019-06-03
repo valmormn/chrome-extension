@@ -6,7 +6,7 @@ html {
 
 body {
     color: #e8e8e8;
-    background-color: #b40909;
+    background-color: #1b1b1b;
     display: flex;
     flex-flow: column;
     text-align: center;
@@ -32,7 +32,7 @@ body {
 #main {
     margin: 80px 24px;
     width: 100%;
-    max-width: 1024px;
+    max-width: 810px;
 }
 
 .card {

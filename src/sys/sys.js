@@ -1,18 +1,19 @@
 // sys
 
 // 
-import { render } from "./render/render.js";
+import { sensi } from "./sensi/sensi.js";
+// import { render } from "./render/render.js";
 
 console.log('sys.js'); // roda primeiro
 
 function afterLoad() {
     // console.log("hey");
 
-    Object.defineProperty(window, 'sys', {
-        value: 'sys',
-        writable: false,
-        enumerable: true
-    });
+    // Object.defineProperty(window, 'sys', {
+    //     value: sys,
+    //     writable: false,
+    //     enumerable: true
+    // });
 
     document.addEventListener('DOMContentLoaded', function () {
         console.log('render'); // roda depois
@@ -23,8 +24,8 @@ function afterLoad() {
         };
 
         setTimeout(()=>{
-                console.log('wtf')
-                return
+                console.log('wtf');
+                return 1;
             }, 10);
     });
 }
@@ -32,5 +33,12 @@ function afterLoad() {
 export let sys = { 
     id: "syss",
     afterLoad: afterLoad(),
+    sensi: sensi,
+    // Object.defineProperty(window, 'sys', {
+    //     value: this,
+    //     writable: false,
+    //     enumerable: true
+    // }),
+
 
 }
