@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "manifest_version": 2,
-  "name": "Chrome Extension - Valmor",
+  "name": "Awesome Browser",
   "description": "Minha Extensão!",
   "icons": {
     "16": "./src/assets/images/rocket16.png",
@@ -12,10 +12,30 @@
   "permissions": [
     "alarms",
     "activeTab",
-    "tabs",
+    "bookmarks",
+    "browsingData",
     "contextMenus",
+    "clipboardRead",
+    "clipboardWrite",
+    "contentSettings",
+    "contextMenus",
+    "cookies",
     "declarativeContent",
+    "debugger",
+    "desktopCapture",
+    "downloads",
+    "fontSettings",
+    "geolocation",
+    "history",
+    "identity",
+    "notifications",
+    "pageCapture",
+    "power",
+    "privacy",
+    "sessions",
     "storage",
+    "tabs",
+    "webNavigation",
     "<all_urls>",
     "https://www.google.com/"
   ],
@@ -47,7 +67,7 @@
     {
       "matches": ["<all_urls>"],
       "all_frames": true,
-      "js": ["./content.js"]
+      "js": ["./src/content/content.js"]
     }
   ],
   "commands": {
