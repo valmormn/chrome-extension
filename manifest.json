@@ -9,10 +9,18 @@
     "48": "./src/assets/images/rocket48.png",
     "128": "./src/assets/images/rocket128.png"
   },
-  "permissions": ["activeTab", "tabs", "contextMenus", "declarativeContent", "storage", 
-    "https://www.google.com/", "https://www.google.com/"],
-  "omnibox": { "keyword" : "v" },
-  "chrome_url_overrides" : {
+  "permissions": [
+    "alarms",
+    "activeTab",
+    "tabs",
+    "contextMenus",
+    "declarativeContent",
+    "storage",
+    "<all_urls>",
+    "https://www.google.com/"
+  ],
+  "omnibox": { "keyword": "v" },
+  "chrome_url_overrides": {
     "newtab": "./src/override.html"
   },
   "options_page": "./src/pages/options/options.html",
@@ -28,18 +36,20 @@
   },
   "background": {
     "scripts": [
-      "./background.js",
+      "./src/background/background.js",
       "./src/assets/vendor/jquery-3.3.1.slim.min.js",
       "./src/assets/vendor/bootstrap/bootstrap.bundle.min.js",
       "./src/sys/sys.js"
     ],
     "persistent": false
   },
-  "content_scripts": [{
-    "matches": [ "<all_urls>" ],
-    "all_frames": true,
-    "js": ["./content.js"]
-  }],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "all_frames": true,
+      "js": ["./content.js"]
+    }
+  ],
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {

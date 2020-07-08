@@ -25,17 +25,19 @@ chrome.runtime.onInstalled.addListener(function() {
     'co.uk': 'United Kingdom'
   };
 
-  // chrome.runtime.onInstalled.addListener(function() {
-    // for (let key of Object.keys(kLocales)) {
-    //   chrome.contextMenus.create({
-    //     id: key,
-    //     title: kLocales[key],
-    //     type: 'normal',
-    //     contexts: ['selection'],
-    //   });
-    // }
-  // });
+  chrome.runtime.onInstalled.addListener(function() {
+    for (let key of Object.keys(kLocales)) {
+      chrome.contextMenus.create({
+        id: key,
+        title: kLocales[key],
+        type: 'normal',
+        contexts: ['selection'],
+      });
+    }
+  });
 
+  // Menu contextual da extensão 
+  // quando o usuário clica com o botão direito do mouse em alguma página
   chrome.contextMenus.create({
     id: 'id de que',
     title: 'Awesome Browser',

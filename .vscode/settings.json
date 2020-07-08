@@ -1,3 +1,8 @@
 {
-    "C_Cpp.default.configurationProvider": "go2sh.cmake-integration"
+    "C_Cpp.default.configurationProvider": "go2sh.cmake-integration",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#11350D",
+        "titleBar.activeBackground": "#174A12",
+        "titleBar.activeForeground": "#F6FDF5"
+    }
 }

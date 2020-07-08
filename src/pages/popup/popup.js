@@ -33,6 +33,6 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     alert('HELLOOOOO WORLD!!');
   });
 
-document.getElementById("fav").addEventListener("click", ()=>{
-    alert('ta maneiro');
-})
+// document.getElementById("fav").addEventListener("click", ()=>{
+//     alert('ta maneiro');
+// })
